@@ -1,0 +1,16 @@
+name: primeiro-workflow
+run-name: Meu primeiro WorkFlow
+
+#on: [push]
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    mac:
+        runs-on: macos-latest
+        steps:
+            - name: Rodar um Hello no mac
+              run: echo "Rodou no mac"
